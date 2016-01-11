@@ -1,7 +1,7 @@
 {
-  "name": "redux-localstorage",
+  "name": "redux-sessionstorage",
   "version": "0.4.0",
-  "description": "Store enhancer that syncs (a subset of) your redux store state to localstorage.",
+  "description": "Store enhancer that syncs (a subset of) your redux store state to sessionstorage.",
   "main": "lib/persistState.js",
   "scripts": {
     "prepublish": "make clean build",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elgerlambert/redux-localstorage.git"
+    "url": "git+https://github.com/ilyagelman/redux-sessionstorage.git"
   },
   "keywords": [
     "Redux",
-    "localstorage"
+    "sessionstorage"
   ],
-  "author": "Elger Lambert <elgerlambert@gmail.com>",
+  "author": "Ilya Gelman <ilyagelman@ilyagelman.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elgerlambert/redux-localstorage/issues"
+    "url": "https://github.com/ilyagelman/redux-sessionstorage/issues"
   },
-  "homepage": "https://github.com/elgerlambert/redux-localstorage#readme",
+  "homepage": "https://github.com/ilyagelman/redux-sessionstorage#readme",
   "devDependencies": {
     "babel": "^5.8.5",
     "babel-core": "^5.8.5",
