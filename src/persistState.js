@@ -35,7 +35,7 @@ export default function persistState(paths, config) {
     deserialize
   } = cfg
 
-  return next => (reducer, initialState) => {
+  return next => (reducer, initialState, ...args) => {
     let persistedState
     let finalInitialState
 
@@ -46,7 +46,7 @@ export default function persistState(paths, config) {
       console.warn('Failed to retrieve initialize state from sessionStorage:', e)
     }
 
-    const store = next(reducer, finalInitialState)
+    const store = next(reducer, finalInitialState, ...args)
     const slicerFn = slicer(paths)
 
     store.subscribe(function () {
